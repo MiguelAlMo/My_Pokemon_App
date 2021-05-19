@@ -353,7 +353,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ma3-Jv-kmR">
-                                <rect key="frame" x="195" y="224" width="215" height="46"/>
+                                <rect key="frame" x="195" y="309" width="215" height="46"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gravel1" translatesAutoresizingMaskIntoConstraints="NO" id="QIc-cJ-OT0">
                                         <rect key="frame" x="0.0" y="0.0" width="215" height="46"/>
@@ -370,14 +370,14 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VaY-XQ-ExD">
-                                <rect key="frame" x="222.66666666666663" y="100" width="160" height="160"/>
+                                <rect key="frame" x="222.66666666666663" y="185" width="160" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="WVO-hR-o9I"/>
                                     <constraint firstAttribute="height" constant="160" id="vUi-dy-i9l"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OfZ-IL-QBS">
-                                <rect key="frame" x="18" y="439" width="215" height="46"/>
+                                <rect key="frame" x="18" y="524" width="215" height="46"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gravel1" translatesAutoresizingMaskIntoConstraints="NO" id="96T-Fy-8bl">
                                         <rect key="frame" x="0.0" y="0.0" width="215" height="46"/>
@@ -394,14 +394,14 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dvt-nx-tbe">
-                                <rect key="frame" x="45.666666666666657" y="315" width="160" height="160"/>
+                                <rect key="frame" x="45.666666666666657" y="400" width="160" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="Hco-7B-6OH"/>
                                     <constraint firstAttribute="height" constant="160" id="o9e-mp-j4S"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PvJ-ez-6tL">
-                                <rect key="frame" x="18" y="110" width="180" height="58"/>
+                                <rect key="frame" x="18" y="195" width="180" height="58"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHARIZARD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAD-YX-slb">
                                         <rect key="frame" x="16" y="4" width="106" height="27"/>
@@ -448,7 +448,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gBQ-IJ-4EH">
-                                <rect key="frame" x="16" y="549" width="396" height="160"/>
+                                <rect key="frame" x="16" y="634" width="396" height="160"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCN-x6-cv9">
                                         <rect key="frame" x="139" y="1" width="256" height="158"/>
@@ -562,7 +562,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Pk-Cr-otg">
-                                <rect key="frame" x="230" y="325" width="180" height="58"/>
+                                <rect key="frame" x="230" y="410" width="180" height="58"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pw:127" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EE-K2-KOf">
                                         <rect key="frame" x="116.66666666666667" y="3.9999999999999982" width="55.333333333333329" height="24.333333333333329"/>
@@ -608,6 +608,13 @@
                                     <constraint firstAttribute="bottom" secondItem="AA4-g2-Eqf" secondAttribute="bottom" constant="8" id="yOi-dG-Rgn"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokemon_logo_blanco" translatesAutoresizingMaskIntoConstraints="NO" id="13u-8s-wmq">
+                                <rect key="frame" x="124" y="60" width="180" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="JsU-1n-MBy"/>
+                                    <constraint firstAttribute="width" constant="180" id="itf-FL-PjM"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yGf-L7-WE8"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -618,15 +625,17 @@
                             <constraint firstItem="VaY-XQ-ExD" firstAttribute="centerX" secondItem="Ma3-Jv-kmR" secondAttribute="centerX" id="FS7-Gw-O9H"/>
                             <constraint firstItem="VaY-XQ-ExD" firstAttribute="bottom" secondItem="Ma3-Jv-kmR" secondAttribute="bottom" constant="-10" id="HxW-p8-x54"/>
                             <constraint firstItem="yGf-L7-WE8" firstAttribute="trailing" secondItem="gBQ-IJ-4EH" secondAttribute="trailing" constant="16" id="IHl-LR-Hug"/>
+                            <constraint firstItem="Ma3-Jv-kmR" firstAttribute="bottom" secondItem="13u-8s-wmq" secondAttribute="bottom" constant="230" id="J8l-Gc-waR"/>
                             <constraint firstItem="6Pk-Cr-otg" firstAttribute="top" secondItem="dvt-nx-tbe" secondAttribute="top" constant="10" id="KLL-Ok-Cfx"/>
                             <constraint firstItem="gBQ-IJ-4EH" firstAttribute="top" secondItem="OfZ-IL-QBS" secondAttribute="bottom" constant="64" id="WGn-TG-Lch"/>
                             <constraint firstItem="yGf-L7-WE8" firstAttribute="trailing" secondItem="6Pk-Cr-otg" secondAttribute="trailing" constant="18" id="XYN-sd-SSl"/>
+                            <constraint firstItem="13u-8s-wmq" firstAttribute="centerX" secondItem="co6-rY-ftg" secondAttribute="centerX" id="c7E-0y-t52"/>
                             <constraint firstItem="dvt-nx-tbe" firstAttribute="top" secondItem="Ma3-Jv-kmR" secondAttribute="bottom" constant="45" id="fEU-br-Keq"/>
+                            <constraint firstItem="13u-8s-wmq" firstAttribute="top" secondItem="yGf-L7-WE8" secondAttribute="top" constant="16" id="kJG-4E-TTT"/>
                             <constraint firstItem="OfZ-IL-QBS" firstAttribute="leading" secondItem="yGf-L7-WE8" secondAttribute="leading" constant="18" id="lj0-yC-aVu"/>
                             <constraint firstItem="gBQ-IJ-4EH" firstAttribute="leading" secondItem="yGf-L7-WE8" secondAttribute="leading" constant="16" id="onC-70-Fza"/>
                             <constraint firstItem="dvt-nx-tbe" firstAttribute="centerX" secondItem="OfZ-IL-QBS" secondAttribute="centerX" id="qal-Ke-SOI"/>
                             <constraint firstItem="PvJ-ez-6tL" firstAttribute="leading" secondItem="yGf-L7-WE8" secondAttribute="leading" constant="18" id="sF1-is-SwU"/>
-                            <constraint firstItem="Ma3-Jv-kmR" firstAttribute="top" secondItem="yGf-L7-WE8" secondAttribute="top" constant="180" id="uQf-aZ-abI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EHx-6b-QsB"/>
@@ -17341,6 +17350,7 @@ AAAAD0GWA
         <image name="pokeballfondo" width="245.33332824707031" height="517.66668701171875"/>
         <image name="pokedex_logo" width="147" height="38"/>
         <image name="pokemon-logo-png-1428" width="463.33334350585938" height="167"/>
+        <image name="pokemon_logo_blanco" width="533.33331298828125" height="400"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
