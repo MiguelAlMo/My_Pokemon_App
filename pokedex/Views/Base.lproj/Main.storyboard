@@ -401,7 +401,7 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PvJ-ez-6tL">
-                                <rect key="frame" x="16" y="190" width="180" height="58"/>
+                                <rect key="frame" x="16" y="190" width="175" height="58"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHARIZARD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAD-YX-slb">
                                         <rect key="frame" x="8.9999999999999929" y="3.9999999999999982" width="111.33333333333331" height="28.333333333333329"/>
@@ -410,7 +410,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Sgq-MX-Se0">
-                                        <rect key="frame" x="49.333333333333321" y="32" width="122.66666666666669" height="18"/>
+                                        <rect key="frame" x="44.333333333333336" y="32" width="122.66666666666666" height="18"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhx-bN-g2q">
                                                 <rect key="frame" x="0.0" y="0.0" width="20.666666666666668" height="18"/>
@@ -419,7 +419,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CDQ-QN-yZ4">
-                                                <rect key="frame" x="22.666666666666671" y="8" width="100" height="10"/>
+                                                <rect key="frame" x="22.666666666666657" y="8" width="100" height="10"/>
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="NBy-N6-aUx"/>
@@ -429,7 +429,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pw:127" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXM-9E-mb1">
-                                        <rect key="frame" x="109" y="4" width="62" height="27"/>
+                                        <rect key="frame" x="104" y="4" width="62" height="27"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -439,7 +439,7 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Sgq-MX-Se0" secondAttribute="trailing" constant="8" id="QEO-gm-L1K"/>
                                     <constraint firstAttribute="bottom" secondItem="Sgq-MX-Se0" secondAttribute="bottom" constant="8" id="Rvc-I1-KvV"/>
-                                    <constraint firstAttribute="width" constant="180" id="SYx-ve-B11"/>
+                                    <constraint firstAttribute="width" constant="175" id="SYx-ve-B11"/>
                                     <constraint firstAttribute="height" constant="58" id="WYU-hz-uit"/>
                                     <constraint firstItem="RAD-YX-slb" firstAttribute="leading" secondItem="PvJ-ez-6tL" secondAttribute="leading" constant="9" id="ioL-DU-xEw"/>
                                     <constraint firstItem="WXM-9E-mb1" firstAttribute="top" secondItem="PvJ-ez-6tL" secondAttribute="top" constant="4" id="qfv-wy-0nV"/>
@@ -556,16 +556,16 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Pk-Cr-otg">
-                                <rect key="frame" x="232" y="405" width="180" height="58"/>
+                                <rect key="frame" x="237" y="405" width="175" height="58"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pw:127" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EE-K2-KOf">
-                                        <rect key="frame" x="109" y="4" width="62" height="27"/>
+                                        <rect key="frame" x="104" y="4" width="62" height="27"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="AA4-g2-Eqf">
-                                        <rect key="frame" x="49.333333333333321" y="32" width="122.66666666666669" height="18"/>
+                                        <rect key="frame" x="44.333333333333321" y="32" width="122.66666666666669" height="18"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XhT-aZ-xvX">
                                                 <rect key="frame" x="0.0" y="0.0" width="20.666666666666668" height="18"/>
@@ -594,7 +594,7 @@
                                 <constraints>
                                     <constraint firstItem="IO7-YJ-nOk" firstAttribute="leading" secondItem="6Pk-Cr-otg" secondAttribute="leading" constant="9" id="7Ol-Lb-02P"/>
                                     <constraint firstAttribute="trailing" secondItem="3EE-K2-KOf" secondAttribute="trailing" constant="9" id="9SW-tn-c7I"/>
-                                    <constraint firstAttribute="width" constant="180" id="UyV-6R-SQe"/>
+                                    <constraint firstAttribute="width" constant="175" id="UyV-6R-SQe"/>
                                     <constraint firstAttribute="height" constant="58" id="gus-MM-fZ6"/>
                                     <constraint firstAttribute="trailing" secondItem="AA4-g2-Eqf" secondAttribute="trailing" constant="8" id="ihv-ld-YGm"/>
                                     <constraint firstItem="3EE-K2-KOf" firstAttribute="top" secondItem="6Pk-Cr-otg" secondAttribute="top" constant="4" id="lJV-t8-17U"/>
