@@ -18,7 +18,6 @@ class HomeViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
     }
-   
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
