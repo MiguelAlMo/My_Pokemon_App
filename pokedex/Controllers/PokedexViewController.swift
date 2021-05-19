@@ -9,16 +9,18 @@ import UIKit
 import Kingfisher
 
 class PokedexViewController: UIViewController {
-    
-    
+
     @IBOutlet weak var collectionView: UICollectionView!
-    //@IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+//    var all: [Pokemon] = []
+//    var pokemons: [Pokemon] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
-        
+        searchBar.delegate = self
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -36,7 +38,7 @@ class PokedexViewController: UIViewController {
     }
 }
 
-extension PokedexViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension PokedexViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         defaultPokemons.count
@@ -59,4 +61,21 @@ extension PokedexViewController: UICollectionViewDelegate, UICollectionViewDataS
         }
         return cell ?? UICollectionViewCell()
     }
+}
+
+extension PokedexViewController: UISearchBarDelegate {
+//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//       all = []
+//       if searchText == "" {
+//         all = defaultPokemons
+//       }
+//       else{
+//         for pokemon in defaultPokemons {
+//           if ((pokemon.name?.lowercased().contains(searchText.lowercased())) ?? false) {
+//             all.append(pokemon)
+//           }
+//         }
+//       }
+//       self.collectionView.reloadData()
+//     }
 }

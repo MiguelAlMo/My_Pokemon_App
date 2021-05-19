@@ -46,8 +46,8 @@ class BattleViewController: UIViewController {
         
         changeMyButton.titleLabel?.numberOfLines = 2
         changeRivalButton.titleLabel?.numberOfLines = 2
-        viewCommands.roundedView(value: 10)
-        viewActionsBattle.roundedView(value: 10)
+        viewCommands.roundedView(value: 15)
+        viewActionsBattle.roundedView(value: 15)
         viewCommands.borderColorBlack(value: 2)
         viewActionsBattle.borderColorBlack(value: 1)
         

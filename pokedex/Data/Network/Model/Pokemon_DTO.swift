@@ -14,6 +14,9 @@ class Pokemon: Codable {
     let imageURL: String?
     let name, type: String?
     let weight, pokemonDefense: Int?
+    var totalPower: Int? {
+        ((attack ?? 0) + (defense ?? 0))
+    }
 
     enum CodingKeys: String, CodingKey {
         case attack, defense
@@ -24,7 +27,7 @@ class Pokemon: Codable {
         case pokemonDefense = "defense:"
     }
 
-    init(attack: Int?, defense: Int?, pokemonDescription: String?, evolutionChain: [EvolutionChain]?, height: Int?, id: Int?, imageURL: String?, name: String?, type: String?, weight: Int?, pokemonDefense: Int?) {
+    init(attack: Int?, defense: Int?, pokemonDescription: String?, evolutionChain: [EvolutionChain]?, height: Int?, id: Int?, imageURL: String?, name: String?, type: String?, weight: Int?, pokemonDefense: Int?, totalPower: Int) {
         self.attack = attack
         self.defense = defense
         self.pokemonDescription = pokemonDescription
