@@ -13,8 +13,8 @@ class PokedexViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var textFieldSearch: UITextField!
     
-    var allPokemons = defaultPokemons
     var filteredData: [Pokemon] = []
+    var filtered = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,14 +33,15 @@ class PokedexViewController: UIViewController,UITextFieldDelegate {
     func filterText(_ query: String) {
         filteredData.removeAll()
         print(filteredData.first?.name ?? "Estoy Vacio")
-        allPokemons.forEach { pokemon in
-            if ((pokemon.name?.lowercased().starts(with: query.lowercased())) != nil) /*pokemon.name == query*/ {
+        defaultPokemons.forEach { pokemon in
+            if ((pokemon.name?.starts(with: query)))!{
                 filteredData.append(pokemon)
                 print(filteredData.last?.name ?? "No he añadido nada")
                 print(query.lowercased())
             }
         }
         collectionView.reloadData()
+        filtered = true
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -64,7 +65,7 @@ extension PokedexViewController: UICollectionViewDelegate, UICollectionViewDataS
         if !filteredData.isEmpty {
             return filteredData.count
         }
-        return allPokemons.count
+        return filtered ? 0 : defaultPokemons.count
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

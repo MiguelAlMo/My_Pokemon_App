@@ -197,7 +197,7 @@
                                 </state>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dsi-St-VEv">
-                                <rect key="frame" x="45" y="126" width="367" height="35"/>
+                                <rect key="frame" x="45" y="126" width="375" height="35"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="KAL-pF-AKV"/>
@@ -221,7 +221,7 @@
                             <constraint firstItem="toU-Bp-OM0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jpc-ZJ-FsR"/>
                             <constraint firstItem="MPK-G5-e7c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="t1j-tR-nG3"/>
                             <constraint firstItem="jrJ-YK-KI1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="xvl-d0-oA6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dsi-St-VEv" secondAttribute="trailing" constant="16" id="zLm-8I-LB7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dsi-St-VEv" secondAttribute="trailing" constant="8" id="zLm-8I-LB7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="U2I-e7-X6N"/>
