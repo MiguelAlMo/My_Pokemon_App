@@ -8,19 +8,39 @@
 import UIKit
 import Kingfisher
 
-class PokedexViewController: UIViewController {
+class PokedexViewController: UIViewController,UITextFieldDelegate {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var textFieldSearch: UITextField!
     
-//    var all: [Pokemon] = []
-//    var pokemons: [Pokemon] = []
+    var allPokemons = defaultPokemons
+    var filteredData: [Pokemon] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
-        searchBar.delegate = self
+        textFieldSearch.delegate = self
+    }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        if let text = textField.text {
+            filterText(text + string)
+        }
+        return true
+    }
+    
+    func filterText(_ query: String) {
+        filteredData.removeAll()
+        print(filteredData.first?.name ?? "Estoy Vacio")
+        allPokemons.forEach { pokemon in
+            if ((pokemon.name?.lowercased().starts(with: query.lowercased())) != nil) /*pokemon.name == query*/ {
+                filteredData.append(pokemon)
+                print(filteredData.last?.name ?? "No he añadido nada")
+                print(query.lowercased())
+            }
+        }
+        collectionView.reloadData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -41,7 +61,10 @@ class PokedexViewController: UIViewController {
 extension PokedexViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        defaultPokemons.count
+        if !filteredData.isEmpty {
+            return filteredData.count
+        }
+        return allPokemons.count
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -55,15 +78,23 @@ extension PokedexViewController: UICollectionViewDelegate, UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PokemonViewCell", for: indexPath) as? PokemonViewCell
-        if(indexPath.row < defaultPokemons.count){
-            let data = defaultPokemons[indexPath.row]
-            cell?.configure(name: data.name ?? "", image: data.imageURL, viewColor: backgroundColorAlpha(forType: data.type ?? ""))
+        if !filteredData.isEmpty {
+            if(indexPath.row < filteredData.count){
+                let data = filteredData[indexPath.row]
+                cell?.configure(name: data.name ?? "", image: data.imageURL, viewColor: backgroundColorAlpha(forType: data.type ?? ""))
+            }
+            return cell ?? UICollectionViewCell()
+        } else {
+            if(indexPath.row < defaultPokemons.count){
+                let data = defaultPokemons[indexPath.row]
+                cell?.configure(name: data.name ?? "", image: data.imageURL, viewColor: backgroundColorAlpha(forType: data.type ?? ""))
+            }
+            return cell ?? UICollectionViewCell()
         }
-        return cell ?? UICollectionViewCell()
     }
 }
 
-extension PokedexViewController: UISearchBarDelegate {
+//extension PokedexViewController: UISearchBarDelegate {
 //    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
 //       all = []
 //       if searchText == "" {
@@ -78,4 +109,4 @@ extension PokedexViewController: UISearchBarDelegate {
 //       }
 //       self.collectionView.reloadData()
 //     }
-}
+//}
