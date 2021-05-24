@@ -13,7 +13,7 @@ class PokedexViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var textFieldSearch: UITextField!
     
-    var filteredData: [Pokemon] = []
+    var filteredData = defaultPokemons
     var filtered = false
     
     override func viewDidLoad() {
@@ -24,8 +24,13 @@ class PokedexViewController: UIViewController,UITextFieldDelegate {
     }
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
-        if let text = textField.text {
-            filterText(text + string)
+        if var text = textField.text {
+            if string.isEmpty {
+                text = ""
+                filterText(text + string)
+            } else {
+                filterText(text + string)
+            }
         }
         return true
     }
@@ -36,7 +41,7 @@ class PokedexViewController: UIViewController,UITextFieldDelegate {
         defaultPokemons.forEach { pokemon in
             if ((pokemon.name?.starts(with: query)))!{
                 filteredData.append(pokemon)
-                print(filteredData.last?.name ?? "No he añadido nada")
+                print(filteredData.last?.name ?? "No has añadido nada")
                 print(query.lowercased())
             }
         }

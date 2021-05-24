@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB1BC31D26579B61003C8913 /* ViewControllerSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1BC31C26579B61003C8913 /* ViewControllerSearch.swift */; };
 		DB2BC9962653A623002F207A /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2BC9952653A623002F207A /* HomeViewCell.swift */; };
 		DB2BC9982653A636002F207A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2BC9972653A636002F207A /* HomeViewController.swift */; };
 		DB2BC99A2653A7E1002F207A /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2BC9992653A7E1002F207A /* ImageExtension.swift */; };
@@ -15,6 +14,7 @@
 		DB377D702652C9460080B46A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB377D6F2652C9460080B46A /* DetailViewController.swift */; };
 		DB824D362652A8E2008249E5 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB824D352652A8E2008249E5 /* ViewExtension.swift */; };
 		DB824D382652AB88008249E5 /* FuncBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB824D372652AB88008249E5 /* FuncBackgroundColor.swift */; };
+		DB85C4E4265C0291006A550A /* BattleChangePokemonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB85C4E3265C0291006A550A /* BattleChangePokemonViewCell.swift */; };
 		DBADCEAC26527C9400735628 /* Pokemon_DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBADCEAB26527C9400735628 /* Pokemon_DTO.swift */; };
 		DBADCEAF26527D7800735628 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBADCEAE26527D7800735628 /* SampleData.swift */; };
 		DBADCEB126527E9900735628 /* pokemon_data.json in Resources */ = {isa = PBXBuildFile; fileRef = DBADCEB026527E9900735628 /* pokemon_data.json */; };
@@ -49,7 +49,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DB1BC31C26579B61003C8913 /* ViewControllerSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSearch.swift; sourceTree = "<group>"; };
 		DB2BC9952653A623002F207A /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
 		DB2BC9972653A636002F207A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DB2BC9992653A7E1002F207A /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
@@ -57,6 +56,7 @@
 		DB377D6F2652C9460080B46A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		DB824D352652A8E2008249E5 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		DB824D372652AB88008249E5 /* FuncBackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncBackgroundColor.swift; sourceTree = "<group>"; };
+		DB85C4E3265C0291006A550A /* BattleChangePokemonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleChangePokemonViewCell.swift; sourceTree = "<group>"; };
 		DBADCEAB26527C9400735628 /* Pokemon_DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon_DTO.swift; sourceTree = "<group>"; };
 		DBADCEAE26527D7800735628 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		DBADCEB026527E9900735628 /* pokemon_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pokemon_data.json; sourceTree = "<group>"; };
@@ -217,7 +217,6 @@
 				DB377D6F2652C9460080B46A /* DetailViewController.swift */,
 				DB2BC9972653A636002F207A /* HomeViewController.swift */,
 				DB2BC99B2653B459002F207A /* BattleViewController.swift */,
-				DB1BC31C26579B61003C8913 /* ViewControllerSearch.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -227,6 +226,7 @@
 			children = (
 				DBD0F338264FEF16006A42A6 /* PokemonViewCell.swift */,
 				DB2BC9952653A623002F207A /* HomeViewCell.swift */,
+				DB85C4E3265C0291006A550A /* BattleChangePokemonViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -397,6 +397,7 @@
 				DB2BC99C2653B459002F207A /* BattleViewController.swift in Sources */,
 				DBD0F309264FE843006A42A6 /* pokedex.xcdatamodeld in Sources */,
 				DBADCEAF26527D7800735628 /* SampleData.swift in Sources */,
+				DB85C4E4265C0291006A550A /* BattleChangePokemonViewCell.swift in Sources */,
 				DB2BC99A2653A7E1002F207A /* ImageExtension.swift in Sources */,
 				DBADCEAC26527C9400735628 /* Pokemon_DTO.swift in Sources */,
 				DBD0F303264FE843006A42A6 /* PokedexViewController.swift in Sources */,
@@ -404,7 +405,6 @@
 				DB2BC9962653A623002F207A /* HomeViewCell.swift in Sources */,
 				DBD0F301264FE843006A42A6 /* SceneDelegate.swift in Sources */,
 				DB824D362652A8E2008249E5 /* ViewExtension.swift in Sources */,
-				DB1BC31D26579B61003C8913 /* ViewControllerSearch.swift in Sources */,
 				DB377D702652C9460080B46A /* DetailViewController.swift in Sources */,
 				DB824D382652AB88008249E5 /* FuncBackgroundColor.swift in Sources */,
 				DBD0F339264FEF16006A42A6 /* PokemonViewCell.swift in Sources */,

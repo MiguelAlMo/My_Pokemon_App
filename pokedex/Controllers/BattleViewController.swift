@@ -10,6 +10,9 @@ import Kingfisher
 
 class BattleViewController: UIViewController {
     
+    //MARK: - CollectionView
+    @IBOutlet weak var collectionChangePokemon: UICollectionView!
+    
     //MARK: - Views
     @IBOutlet weak var viewCommands: UIView!
     @IBOutlet weak var viewActionsBattle: UIView!
@@ -43,6 +46,12 @@ class BattleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        collectionChangePokemon.delegate = self
+        collectionChangePokemon.dataSource = self
+        collectionChangePokemon.isHidden = true
+        collectionChangePokemon.borderColorBlack(value: 2)
+        collectionChangePokemon.roundedView(value: 8)
         
         changeMyButton.titleLabel?.numberOfLines = 2
         changeRivalButton.titleLabel?.numberOfLines = 2
@@ -93,12 +102,8 @@ class BattleViewController: UIViewController {
         
     }
     @IBAction func changeMyPokemon(_ sender: Any) {
-        myPokemon = defaultPokemons.randomElement()
-        myPokemonImage.kf.setImage(with: URL(string: myPokemon?.imageURL ?? ""))
-        viewLiveMyPokemon.backgroundColor = .green
-        nameMyPokemon.text = myPokemon?.name
-        powerMyPokemon.text = "Pw:\(myPokemon?.attack ?? 0)"
-        whatShouldDo.text = "What should \(myPokemon?.name ?? "") do?"
+        collectionChangePokemon.isHidden = false
+        viewCommands.isHidden = true
     }
     @IBAction func changeRivalPokemon(_ sender: Any) {
         rivalPokemon = defaultPokemons.randomElement()
@@ -108,4 +113,43 @@ class BattleViewController: UIViewController {
         powerRivalPokemon.text = "Pw:\(rivalPokemon?.attack ?? 0)"
     }
     
+}
+
+extension BattleViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        defaultPokemons.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width / 6 - 2,
+                      height: collectionView.frame.width / 6 - 2 )
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BattleChangePokemonViewCell", for: indexPath) as? BattleChangePokemonViewCell
+            if(indexPath.row < defaultPokemons.count){
+                let data = defaultPokemons[indexPath.row]
+                cell?.configure(image: data.imageURL, viewColor: backgroundColorAlpha(forType: data.type ?? ""))
+            }
+            return cell ?? UICollectionViewCell()
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if(indexPath.row < defaultPokemons.count) {
+            
+            myPokemon = defaultPokemons[indexPath.row]
+            myPokemonImage.kf.setImage(with: URL(string: myPokemon?.imageURL ?? ""))
+            viewLiveMyPokemon.backgroundColor = .green
+            nameMyPokemon.text = myPokemon?.name
+            powerMyPokemon.text = "Pw:\(myPokemon?.attack ?? 0)"
+            whatShouldDo.text = "What should \(myPokemon?.name ?? "") do?"
+            viewCommands.isHidden = false
+            collectionChangePokemon.isHidden = true
+        }
+    }
 }
