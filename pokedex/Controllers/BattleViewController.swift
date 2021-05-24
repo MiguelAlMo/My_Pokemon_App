@@ -39,6 +39,7 @@ class BattleViewController: UIViewController {
     @IBOutlet weak var changeRivalButton: UIButton!
     @IBOutlet weak var fightButton: UIButton!
     @IBOutlet weak var runButton: UIButton!
+    @IBOutlet weak var selectPokemonLabel: UILabel!
     
     //MARK: - variables
     var myPokemon = defaultPokemons.randomElement()
@@ -81,6 +82,7 @@ class BattleViewController: UIViewController {
         powerRivalPokemon.text = "Pw:\(rivalPokemon?.attack ?? 0)"
         powerMyPokemon.text = "Pw:\(myPokemon?.attack ?? 0)"
         whatShouldDo.text = "What should \(myPokemon?.name ?? "") do?"
+        selectPokemonLabel.isHidden = true
     }
     
     //MARK: - Actions
@@ -104,6 +106,7 @@ class BattleViewController: UIViewController {
     @IBAction func changeMyPokemon(_ sender: Any) {
         collectionChangePokemon.isHidden = false
         viewCommands.isHidden = true
+        selectPokemonLabel.isHidden = false
     }
     @IBAction func changeRivalPokemon(_ sender: Any) {
         rivalPokemon = defaultPokemons.randomElement()
@@ -150,6 +153,7 @@ extension BattleViewController: UICollectionViewDelegate, UICollectionViewDataSo
             whatShouldDo.text = "What should \(myPokemon?.name ?? "") do?"
             viewCommands.isHidden = false
             collectionChangePokemon.isHidden = true
+            selectPokemonLabel.isHidden = true
         }
     }
 }
