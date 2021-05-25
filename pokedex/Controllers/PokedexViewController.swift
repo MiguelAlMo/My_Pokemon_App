@@ -26,10 +26,14 @@ class PokedexViewController: UIViewController,UITextFieldDelegate {
         
         if var text = textField.text {
             if string.isEmpty {
-                text = ""
-                filterText(text + string)
+                print("-----------------------")
+                filterText("\(text.removeLast())")
+                print("text: \(text)")
+                print("string:\(string)")
+                print("-----------------------")
             } else {
                 filterText(text + string)
+                print(text + string)
             }
         }
         return true
@@ -37,12 +41,12 @@ class PokedexViewController: UIViewController,UITextFieldDelegate {
     
     func filterText(_ query: String) {
         filteredData.removeAll()
-        print(filteredData.first?.name ?? "Estoy Vacio")
+        //print(filteredData.first?.name ?? "Estoy Vacio")
         defaultPokemons.forEach { pokemon in
             if ((pokemon.name?.starts(with: query)))!{
                 filteredData.append(pokemon)
                 print(filteredData.last?.name ?? "No has añadido nada")
-                print(query.lowercased())
+                //print(query.lowercased())
             }
         }
         collectionView.reloadData()
