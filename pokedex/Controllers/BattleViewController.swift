@@ -51,8 +51,9 @@ class BattleViewController: UIViewController {
         collectionChangePokemon.delegate = self
         collectionChangePokemon.dataSource = self
         collectionChangePokemon.isHidden = true
-        collectionChangePokemon.borderColorBlack(value: 2)
-        collectionChangePokemon.roundedView(value: 8)
+        collectionChangePokemon.layer.borderWidth = 1
+        collectionChangePokemon.layer.borderColor = UIColor.gray.cgColor
+        collectionChangePokemon.roundedView(value: 20)
         
         changeMyButton.titleLabel?.numberOfLines = 2
         changeRivalButton.titleLabel?.numberOfLines = 2

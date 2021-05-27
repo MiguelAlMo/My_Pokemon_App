@@ -679,7 +679,7 @@
                                 </constraints>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="w4j-sk-Bbo">
-                                <rect key="frame" x="16" y="629" width="396" height="263"/>
+                                <rect key="frame" x="0.0" y="629" width="428" height="297"/>
                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="0.49596440395231789" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aJY-yx-wTn">
                                     <size key="itemSize" width="128" height="128"/>
@@ -742,18 +742,18 @@
                         <viewLayoutGuide key="safeArea" id="yGf-L7-WE8"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="yGf-L7-WE8" firstAttribute="bottom" secondItem="w4j-sk-Bbo" secondAttribute="bottom" id="08u-7k-Ki6"/>
                             <constraint firstItem="dAd-Yq-N9E" firstAttribute="centerX" secondItem="co6-rY-ftg" secondAttribute="centerX" id="3Mu-wP-9r2"/>
                             <constraint firstItem="dvt-nx-tbe" firstAttribute="bottom" secondItem="OfZ-IL-QBS" secondAttribute="bottom" constant="-10" id="4Ap-QE-pfV"/>
                             <constraint firstItem="gBQ-IJ-4EH" firstAttribute="top" secondItem="dAd-Yq-N9E" secondAttribute="bottom" constant="4" id="AYe-J5-Zxz"/>
                             <constraint firstItem="yGf-L7-WE8" firstAttribute="trailing" secondItem="Ma3-Jv-kmR" secondAttribute="trailing" constant="18" id="B3X-v5-pCy"/>
                             <constraint firstItem="PvJ-ez-6tL" firstAttribute="top" secondItem="VaY-XQ-ExD" secondAttribute="top" constant="10" id="BpO-JP-5bt"/>
                             <constraint firstItem="VaY-XQ-ExD" firstAttribute="centerX" secondItem="Ma3-Jv-kmR" secondAttribute="centerX" id="FS7-Gw-O9H"/>
-                            <constraint firstItem="yGf-L7-WE8" firstAttribute="trailing" secondItem="w4j-sk-Bbo" secondAttribute="trailing" constant="16" id="HGt-xp-gf8"/>
+                            <constraint firstItem="yGf-L7-WE8" firstAttribute="trailing" secondItem="w4j-sk-Bbo" secondAttribute="trailing" id="HGt-xp-gf8"/>
                             <constraint firstItem="VaY-XQ-ExD" firstAttribute="bottom" secondItem="Ma3-Jv-kmR" secondAttribute="bottom" constant="-10" id="HxW-p8-x54"/>
                             <constraint firstItem="yGf-L7-WE8" firstAttribute="trailing" secondItem="gBQ-IJ-4EH" secondAttribute="trailing" constant="15" id="IHl-LR-Hug"/>
                             <constraint firstItem="Ma3-Jv-kmR" firstAttribute="bottom" secondItem="13u-8s-wmq" secondAttribute="bottom" constant="225" id="J8l-Gc-waR"/>
                             <constraint firstItem="6Pk-Cr-otg" firstAttribute="top" secondItem="dvt-nx-tbe" secondAttribute="top" constant="10" id="KLL-Ok-Cfx"/>
+                            <constraint firstAttribute="bottom" secondItem="w4j-sk-Bbo" secondAttribute="bottom" id="Lnf-zm-Dz3"/>
                             <constraint firstItem="gBQ-IJ-4EH" firstAttribute="top" secondItem="OfZ-IL-QBS" secondAttribute="bottom" constant="64" id="WGn-TG-Lch"/>
                             <constraint firstItem="yGf-L7-WE8" firstAttribute="trailing" secondItem="6Pk-Cr-otg" secondAttribute="trailing" constant="16" id="XYN-sd-SSl"/>
                             <constraint firstItem="13u-8s-wmq" firstAttribute="centerX" secondItem="co6-rY-ftg" secondAttribute="centerX" id="c7E-0y-t52"/>
@@ -763,7 +763,7 @@
                             <constraint firstItem="gBQ-IJ-4EH" firstAttribute="leading" secondItem="yGf-L7-WE8" secondAttribute="leading" constant="15" id="onC-70-Fza"/>
                             <constraint firstItem="dvt-nx-tbe" firstAttribute="centerX" secondItem="OfZ-IL-QBS" secondAttribute="centerX" id="qal-Ke-SOI"/>
                             <constraint firstItem="PvJ-ez-6tL" firstAttribute="leading" secondItem="yGf-L7-WE8" secondAttribute="leading" constant="16" id="sF1-is-SwU"/>
-                            <constraint firstItem="w4j-sk-Bbo" firstAttribute="leading" secondItem="yGf-L7-WE8" secondAttribute="leading" constant="16" id="tiV-AS-K8Y"/>
+                            <constraint firstItem="w4j-sk-Bbo" firstAttribute="leading" secondItem="yGf-L7-WE8" secondAttribute="leading" id="tiV-AS-K8Y"/>
                             <constraint firstItem="w4j-sk-Bbo" firstAttribute="top" secondItem="gBQ-IJ-4EH" secondAttribute="top" id="vAd-Hn-Lma"/>
                         </constraints>
                     </view>
