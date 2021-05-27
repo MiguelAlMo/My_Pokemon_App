@@ -39,7 +39,6 @@ class DetailViewController: UIViewController {
                 }
             }
         }
-        
         defaultPokemons.forEach { poke in
             if pokemon?.evolutionChain?.count ?? 0 == 2 {
                 if pokemon?.evolutionChain?[0].name == poke.name {
@@ -51,7 +50,6 @@ class DetailViewController: UIViewController {
                 }
             }
         }
-        
         defaultPokemons.forEach { poke in
             if pokemon?.evolutionChain?.count ?? 0 == 3{
                 if pokemon?.evolutionChain?[0].name == poke.name {
@@ -66,7 +64,6 @@ class DetailViewController: UIViewController {
                 }
             }
         }
-        
         
         descriptionView.borderColorBlack(value: 1)
         descriptionView.roundedView(value: 20)
