@@ -22,13 +22,54 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var defensePokemon: UILabel!
     
     @IBOutlet weak var imagePokemon: UIImageView!
+    @IBOutlet weak var imageFirstEvolution: UIImageView!
+    @IBOutlet weak var imageSecondEvolution: UIImageView!
+    @IBOutlet weak var imageThirdvolution: UIImageView!
     
     var pokemon: Pokemon?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        defaultPokemons.forEach { poke in
+            if pokemon?.evolutionChain?.count ?? 0 == 1 {
+                if pokemon?.evolutionChain?[0].name == poke.name {
+                    imageFirstEvolution.kf.setImage(with: URL(string: poke.imageURL ?? ""))
+                    
+                }
+            }
+        }
+        
+        defaultPokemons.forEach { poke in
+            if pokemon?.evolutionChain?.count ?? 0 == 2 {
+                if pokemon?.evolutionChain?[0].name == poke.name {
+                    imageFirstEvolution.kf.setImage(with: URL(string: poke.imageURL ?? ""))
+                    
+                }
+                if pokemon?.evolutionChain?[1].name == poke.name {
+                    imageSecondEvolution.kf.setImage(with: URL(string: poke.imageURL ?? ""))
+                }
+            }
+        }
+        
+        defaultPokemons.forEach { poke in
+            if pokemon?.evolutionChain?.count ?? 0 == 3{
+                if pokemon?.evolutionChain?[0].name == poke.name {
+                    imageFirstEvolution.kf.setImage(with: URL(string: poke.imageURL ?? ""))
+                    
+                }
+                if pokemon?.evolutionChain?[1].name == poke.name {
+                    imageSecondEvolution.kf.setImage(with: URL(string: poke.imageURL ?? ""))
+                }
+                if pokemon?.evolutionChain?[2].name == poke.name {
+                    imageThirdvolution.kf.setImage(with: URL(string: poke.imageURL ?? ""))
+                }
+            }
+        }
+        
+        
         descriptionView.borderColorBlack(value: 1)
-        descriptionView.roundedView(value: 10)
+        descriptionView.roundedView(value: 20)
         backgroundView.backgroundColor = backgroundColor(forType: pokemon?.type ?? "")
         imagePokemon.kf.setImage(with: URL(string: pokemon?.imageURL ?? ""))
         
