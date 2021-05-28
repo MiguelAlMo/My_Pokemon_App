@@ -11,8 +11,8 @@
 		DB2BC9982653A636002F207A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2BC9972653A636002F207A /* HomeViewController.swift */; };
 		DB2BC99A2653A7E1002F207A /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2BC9992653A7E1002F207A /* ImageExtension.swift */; };
 		DB2BC99C2653B459002F207A /* BattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2BC99B2653B459002F207A /* BattleViewController.swift */; };
+		DB2E1DE82660F43800D0ED01 /* PruebasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2E1DE72660F43800D0ED01 /* PruebasViewController.swift */; };
 		DB377D702652C9460080B46A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB377D6F2652C9460080B46A /* DetailViewController.swift */; };
-		DB3A63F3265EA6E700F23F2E /* EvolutionChainViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3A63F2265EA6E700F23F2E /* EvolutionChainViewCell.swift */; };
 		DB824D362652A8E2008249E5 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB824D352652A8E2008249E5 /* ViewExtension.swift */; };
 		DB824D382652AB88008249E5 /* FuncBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB824D372652AB88008249E5 /* FuncBackgroundColor.swift */; };
 		DB85C4E4265C0291006A550A /* BattleChangePokemonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB85C4E3265C0291006A550A /* BattleChangePokemonViewCell.swift */; };
@@ -54,8 +54,8 @@
 		DB2BC9972653A636002F207A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DB2BC9992653A7E1002F207A /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 		DB2BC99B2653B459002F207A /* BattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleViewController.swift; sourceTree = "<group>"; };
+		DB2E1DE72660F43800D0ED01 /* PruebasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebasViewController.swift; sourceTree = "<group>"; };
 		DB377D6F2652C9460080B46A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		DB3A63F2265EA6E700F23F2E /* EvolutionChainViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionChainViewCell.swift; sourceTree = "<group>"; };
 		DB824D352652A8E2008249E5 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		DB824D372652AB88008249E5 /* FuncBackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncBackgroundColor.swift; sourceTree = "<group>"; };
 		DB85C4E3265C0291006A550A /* BattleChangePokemonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleChangePokemonViewCell.swift; sourceTree = "<group>"; };
@@ -106,6 +106,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB156BCD26612B73000B1349 /* Pruebas */ = {
+			isa = PBXGroup;
+			children = (
+				DB2E1DE72660F43800D0ED01 /* PruebasViewController.swift */,
+			);
+			path = Pruebas;
+			sourceTree = "<group>";
+		};
 		DB824D342652A7EB008249E5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +222,7 @@
 		DBD0F333264FE973006A42A6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DB156BCD26612B73000B1349 /* Pruebas */,
 				DBD0F334264FE992006A42A6 /* Cells */,
 				DBD0F302264FE843006A42A6 /* PokedexViewController.swift */,
 				DB377D6F2652C9460080B46A /* DetailViewController.swift */,
@@ -229,7 +238,6 @@
 				DBD0F338264FEF16006A42A6 /* PokemonViewCell.swift */,
 				DB2BC9952653A623002F207A /* HomeViewCell.swift */,
 				DB85C4E3265C0291006A550A /* BattleChangePokemonViewCell.swift */,
-				DB3A63F2265EA6E700F23F2E /* EvolutionChainViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -402,12 +410,12 @@
 				DBADCEAF26527D7800735628 /* SampleData.swift in Sources */,
 				DB85C4E4265C0291006A550A /* BattleChangePokemonViewCell.swift in Sources */,
 				DB2BC99A2653A7E1002F207A /* ImageExtension.swift in Sources */,
+				DB2E1DE82660F43800D0ED01 /* PruebasViewController.swift in Sources */,
 				DBADCEAC26527C9400735628 /* Pokemon_DTO.swift in Sources */,
 				DBD0F303264FE843006A42A6 /* PokedexViewController.swift in Sources */,
 				DBD0F2FF264FE843006A42A6 /* AppDelegate.swift in Sources */,
 				DB2BC9962653A623002F207A /* HomeViewCell.swift in Sources */,
 				DBD0F301264FE843006A42A6 /* SceneDelegate.swift in Sources */,
-				DB3A63F3265EA6E700F23F2E /* EvolutionChainViewCell.swift in Sources */,
 				DB824D362652A8E2008249E5 /* ViewExtension.swift in Sources */,
 				DB377D702652C9460080B46A /* DetailViewController.swift in Sources */,
 				DB824D382652AB88008249E5 /* FuncBackgroundColor.swift in Sources */,

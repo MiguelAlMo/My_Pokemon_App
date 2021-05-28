@@ -51,7 +51,7 @@ class BattleViewController: UIViewController {
         collectionChangePokemon.delegate = self
         collectionChangePokemon.dataSource = self
         collectionChangePokemon.isHidden = true
-        collectionChangePokemon.layer.borderWidth = 1
+        collectionChangePokemon.layer.borderWidth = 2
         collectionChangePokemon.layer.borderColor = UIColor.gray.cgColor
         collectionChangePokemon.roundedView(value: 20)
         
@@ -92,15 +92,18 @@ class BattleViewController: UIViewController {
         if(rivalPokemon?.attack ?? 0 < myPokemon?.attack ?? 0) {
             rivalPokemonImage.image = UIImage(named: "rip")
             viewLiveRivalPokemon.backgroundColor = .red
+            showAlert(message: "Enemy \(rivalPokemon?.name ?? "") fainted!\nYou win!")
             
         } else if (rivalPokemon?.attack ?? 0 > myPokemon?.attack ?? 0){
             myPokemonImage.image = UIImage(named: "rip")
             viewLiveMyPokemon.backgroundColor = .red
+            showAlert(message: "\(myPokemon?.name ?? "") fainted!\nYou Lose!")
         } else {
             rivalPokemonImage.image = UIImage(named: "rip")
             viewLiveRivalPokemon.backgroundColor = .red
             myPokemonImage.image = UIImage(named: "rip")
             viewLiveMyPokemon.backgroundColor = .red
+            showAlert(message: "\(myPokemon?.name ?? "") and \(rivalPokemon?.name ?? "") have fainted!\nBattle tied!")
         }
         
     }
@@ -115,6 +118,12 @@ class BattleViewController: UIViewController {
         viewLiveRivalPokemon.backgroundColor = .green
         nameRivalPokemon.text = rivalPokemon?.name
         powerRivalPokemon.text = "Pw:\(rivalPokemon?.attack ?? 0)"
+    }
+    
+    func showAlert(message: String) {
+        let alert = UIAlertController(title: "Battle results", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
     
 }
