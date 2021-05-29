@@ -1,7 +1,3 @@
-// This file was generated from JSON Schema using quicktype, do not modify it directly.
-// To parse the JSON, add this file to your project and do:
-//
-//   let pokemons = try? newJSONDecoder().decode(Pokemons.self, from: jsonData)
 
 import Foundation
 
@@ -17,6 +13,46 @@ class Pokemon: Codable {
     var totalPower: Int? {
         ((attack ?? 0) + (defense ?? 0))
     }
+    var iconHeight: String {
+            switch height ?? 0 {
+                case 0...4 : return "stats_1_height"
+                case 5...9 :return "stats_2_height"
+                case 10...14 :return "stats_3_height"
+                case 15...19 :return "stats_4_height"
+                case 20...1000  :return "stats_5_height"
+                default: return "stats_1_height"
+            }
+        }
+    var iconWeight: String {
+            switch weight ?? 0 {
+                case 0...49 : return "stats_1_weight"
+                case 50...99 :return "stats_2_weight"
+                case 100...199 :return "stats_3_weight"
+                case 200...349 :return "stats_4_weight"
+                case 350...10000  :return "stats_5_weight"
+                default: return "stats_1_weight"
+            }
+        }
+    var iconAttack: String {
+            switch attack ?? 0 {
+                case 0...24 : return "stats_1_attack"
+                case 25...49 :return "stats_2_attack"
+                case 50...74 :return "stats_3_attack"
+                case 75...99 :return "stats_4_attack"
+                case 100...1000  :return "stats_5_attack"
+                default: return "stats_1_attack"
+            }
+        }
+    var iconDefense: String {
+            switch attack ?? 0 {
+                case 0...24 : return "stats_1_defense"
+                case 25...49 :return "stats_2_defense"
+                case 50...74 :return "stats_3_defense"
+                case 75...99 :return "stats_4_defense"
+                case 100...1000  :return "stats_5_defense"
+                default: return "stats_1_defense"
+            }
+        }
 
     enum CodingKeys: String, CodingKey {
         case attack, defense

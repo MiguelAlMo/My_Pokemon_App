@@ -438,7 +438,7 @@
                                     <constraint firstItem="QIc-cJ-OT0" firstAttribute="top" secondItem="Ma3-Jv-kmR" secondAttribute="top" id="lnk-dP-hiY"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VaY-XQ-ExD">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stats_4_attack" translatesAutoresizingMaskIntoConstraints="NO" id="VaY-XQ-ExD">
                                 <rect key="frame" x="222.66666666666663" y="180" width="160" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="WVO-hR-o9I"/>
@@ -813,12 +813,43 @@
                                     <constraint firstAttribute="height" constant="280" id="UV2-yP-s6L"/>
                                 </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="S8r-am-SmR">
+                                <rect key="frame" x="182" y="392.66666666666669" width="64" height="141.00000000000006"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stats_1_attack" translatesAutoresizingMaskIntoConstraints="NO" id="8Vb-wv-8kk">
+                                        <rect key="frame" x="0.0" y="0.0" width="12" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="gmh-H4-gF2"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stats_2_attack" translatesAutoresizingMaskIntoConstraints="NO" id="3SK-xJ-AAZ">
+                                        <rect key="frame" x="0.0" y="42" width="21.333333333333332" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="nJK-Ci-kiU"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stats_4_attack" translatesAutoresizingMaskIntoConstraints="NO" id="cIy-3a-JxO">
+                                        <rect key="frame" x="0.0" y="84" width="48.333333333333336" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="068-AJ-Ltx"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stats_5_attack" translatesAutoresizingMaskIntoConstraints="NO" id="gGy-vx-EIj">
+                                        <rect key="frame" x="0.0" y="125.99999999999994" width="64" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="F5i-8P-nTM"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YxU-ig-qAR"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="bbZ-yq-gkN" secondAttribute="bottom" id="3KN-0s-OeT"/>
+                            <constraint firstItem="S8r-am-SmR" firstAttribute="centerX" secondItem="E0f-qX-WjD" secondAttribute="centerX" id="4Rs-83-CCA"/>
                             <constraint firstItem="bbZ-yq-gkN" firstAttribute="leading" secondItem="YxU-ig-qAR" secondAttribute="leading" id="4oR-lj-h82"/>
+                            <constraint firstItem="S8r-am-SmR" firstAttribute="centerY" secondItem="E0f-qX-WjD" secondAttribute="centerY" id="P2F-qx-O2t"/>
                             <constraint firstItem="jgb-S2-hXw" firstAttribute="leading" secondItem="YxU-ig-qAR" secondAttribute="leading" id="PL9-SM-2y1"/>
                             <constraint firstItem="YxU-ig-qAR" firstAttribute="trailing" secondItem="jgb-S2-hXw" secondAttribute="trailing" id="lT3-Wl-q1B"/>
                             <constraint firstItem="bbZ-yq-gkN" firstAttribute="top" secondItem="YxU-ig-qAR" secondAttribute="top" id="m8L-lx-MbC"/>
@@ -834,7 +865,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vG6-cZ-5Vk"/>
         <segue reference="pRj-U3-Aix"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -34198,6 +34228,10 @@ AAAAD0GWA
         <image name="pokedex_logo" width="147" height="38"/>
         <image name="pokemon-logo-png-1428" width="463.33334350585938" height="167"/>
         <image name="pokemon_logo_blanco" width="533.33331298828125" height="400"/>
+        <image name="stats_1_attack" width="12" height="5"/>
+        <image name="stats_2_attack" width="21.333333969116211" height="5"/>
+        <image name="stats_4_attack" width="48.333332061767578" height="5"/>
+        <image name="stats_5_attack" width="64" height="5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
