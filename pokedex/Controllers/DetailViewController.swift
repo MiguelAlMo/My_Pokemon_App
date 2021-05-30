@@ -75,10 +75,10 @@ class DetailViewController: UIViewController {
         
         descriptionLabel.text = pokemon?.pokemonDescription
         namePokemon.text = "\(String(describing: pokemon?.name ?? ""))"
-        weightPokemon.text = "Weight: \(pokemon?.weight ?? 0) Kg"
-        heightPokemon.text = "Height: \(pokemon?.height ?? 0)0 cm"
-        attackPokemon.text = "Attack: \(pokemon?.attack ?? 0)"
-        defensePokemon.text = "Defense: \(pokemon?.defense ?? 0)"
+        weightPokemon.text = "\(pokemon?.weight ?? 0)"
+        heightPokemon.text = "\(pokemon?.height ?? 0)"
+        attackPokemon.text = "\(pokemon?.attack ?? 0)"
+        defensePokemon.text = "\(pokemon?.defense ?? 0)"
         imageStatsAttack.image = UIImage(named: pokemon?.iconAttack ?? "")
         imageStatsDefense.image = UIImage(named: pokemon?.iconDefense ?? "")
         imageStatsHeight.image = UIImage(named: pokemon?.iconHeight ?? "")
