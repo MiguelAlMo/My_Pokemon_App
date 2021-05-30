@@ -15,32 +15,32 @@ class Pokemon: Codable {
     }
     var iconHeight: String {
             switch height ?? 0 {
-                case 0...4 : return "stats_1_height"
-                case 5...9 :return "stats_2_height"
-                case 10...14 :return "stats_3_height"
-                case 15...19 :return "stats_4_height"
-                case 20...1000  :return "stats_5_height"
-                default: return "stats_1_height"
+                case 0...3 : return "stats_1_height"
+                case 4...8 :return "stats_2_height"
+                case 9...13 :return "stats_3_height"
+                case 14...18 :return "stats_4_height"
+                case 19...1000  :return "stats_5_height"
+                default: return "stats_5_height"
             }
         }
     var iconWeight: String {
             switch weight ?? 0 {
                 case 0...49 : return "stats_1_weight"
                 case 50...99 :return "stats_2_weight"
-                case 100...199 :return "stats_3_weight"
-                case 200...349 :return "stats_4_weight"
-                case 350...10000  :return "stats_5_weight"
+                case 100...224 :return "stats_3_weight"
+                case 225...399 :return "stats_4_weight"
+                case 400...10000  :return "stats_5_weight"
                 default: return "stats_1_weight"
             }
         }
     var iconAttack: String {
             switch attack ?? 0 {
-                case 0...24 : return "stats_1_attack"
-                case 25...49 :return "stats_2_attack"
-                case 50...74 :return "stats_3_attack"
-                case 75...99 :return "stats_4_attack"
-                case 100...1000  :return "stats_5_attack"
-                default: return "stats_1_attack"
+                case 0...19 : return "stats_1_attack"
+                case 20...39 :return "stats_2_attack"
+                case 40...64 :return "stats_3_attack"
+                case 65...89 :return "stats_4_attack"
+                case 90...1000  :return "stats_5_attack"
+                default: return "stats_1_weight"
             }
         }
     var iconDefense: String {
