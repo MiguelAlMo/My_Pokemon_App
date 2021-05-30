@@ -242,150 +242,161 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8U9-Hx-TVI">
+                                <rect key="frame" x="0.0" y="270" width="428" height="602"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1F1-Uu-eIF">
+                                <rect key="frame" x="171.33333333333334" y="298" width="85.333333333333343" height="44"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4ZZ-hg-JU5">
+                                <rect key="frame" x="24" y="366" width="380" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evolution:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qon-ZV-hH7">
+                                        <rect key="frame" x="0.0" y="11.999999999999998" width="165" height="31.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interrogante" translatesAutoresizingMaskIntoConstraints="NO" id="uvw-4a-BcF">
+                                        <rect key="frame" x="165" y="0.0" width="55" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="Ngc-i0-EkU"/>
+                                            <constraint firstAttribute="height" constant="55" id="WdH-gh-b5j"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7RK-J9-T2b">
+                                        <rect key="frame" x="220" y="18" width="25" height="19.333333333333329"/>
+                                        <color key="tintColor" red="0.25490197539999998" green="0.34117650989999998" blue="0.61960786580000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="2Hr-FI-YgS"/>
+                                            <constraint firstAttribute="height" constant="25" id="YJh-mC-Ypt"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interrogante" translatesAutoresizingMaskIntoConstraints="NO" id="B5h-Mg-HP9">
+                                        <rect key="frame" x="245" y="0.0" width="55" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="VI7-Xr-vsX"/>
+                                            <constraint firstAttribute="height" constant="55" id="Z4q-ab-Ond"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kme-VT-Fs8">
+                                        <rect key="frame" x="300" y="18" width="25" height="19.333333333333329"/>
+                                        <color key="tintColor" red="0.25490197539999998" green="0.34117650989999998" blue="0.61960786580000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="9oL-dw-lRv"/>
+                                            <constraint firstAttribute="height" constant="25" id="qwq-dW-bLa"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interrogante" translatesAutoresizingMaskIntoConstraints="NO" id="qxS-UR-gFw">
+                                        <rect key="frame" x="325" y="0.0" width="55" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="BDP-eJ-PGE"/>
+                                            <constraint firstAttribute="width" constant="55" id="OAK-Jz-JsF"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPi-54-qp5">
+                                <rect key="frame" x="24" y="441" width="380" height="27"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t9i-RE-XPI">
-                                <rect key="frame" x="8" y="8" width="412" height="330"/>
+                                <rect key="frame" x="8" y="8" width="412" height="280"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="330" id="pLM-9A-hJl"/>
+                                    <constraint firstAttribute="height" constant="280" id="pLM-9A-hJl"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="FSZ-hY-Gmo">
-                                <rect key="frame" x="0.0" y="354" width="428" height="518"/>
+                            <stackView opaque="NO" contentMode="bottom" distribution="fillEqually" alignment="bottom" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="cyt-Rg-Qtg">
+                                <rect key="frame" x="24" y="491.99999999999994" width="380" height="128.33333333333331"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8U9-Hx-TVI">
-                                        <rect key="frame" x="0.0" y="0.0" width="428" height="518"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="TgX-J4-eLq">
+                                        <rect key="frame" x="0.0" y="0.0" width="188.66666666666666" height="128.33333333333334"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="rrg-8e-Xl4">
-                                                <rect key="frame" x="8" y="8" width="412" height="486"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="pC5-A4-RNN">
-                                                        <rect key="frame" x="0.0" y="0.0" width="412" height="247"/>
-                                                        <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="rEd-Bl-yZL">
-                                                                <rect key="frame" x="0.0" y="0.0" width="186" height="247"/>
-                                                                <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1F1-Uu-eIF">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="186" height="30"/>
-                                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
-                                                                        <nil key="textColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="weight:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkd-3D-Oxa">
-                                                                        <rect key="frame" x="0.0" y="108.66666666666669" width="186" height="30"/>
-                                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
-                                                                        <nil key="textColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attack:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDF-vm-bQl">
-                                                                        <rect key="frame" x="0.0" y="217" width="186" height="30"/>
-                                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
-                                                                        <nil key="textColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                </subviews>
-                                                            </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="S4X-K1-4ZF">
-                                                                <rect key="frame" x="190" y="0.0" width="222" height="247"/>
-                                                                <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NgK-tS-fGg">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="222" height="30"/>
-                                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
-                                                                        <nil key="textColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZE-RI-dqu">
-                                                                        <rect key="frame" x="0.0" y="108.66666666666669" width="222" height="30"/>
-                                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
-                                                                        <nil key="textColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Defense:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="get-g1-Qaf">
-                                                                        <rect key="frame" x="0.0" y="217" width="222" height="30"/>
-                                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
-                                                                        <nil key="textColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                </subviews>
-                                                            </stackView>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="4ZZ-hg-JU5">
-                                                        <rect key="frame" x="0.0" y="247" width="412" height="165"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evolution:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qon-ZV-hH7">
-                                                                <rect key="frame" x="0.0" y="67.333333333333371" width="142" height="30"/>
-                                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interrogante" translatesAutoresizingMaskIntoConstraints="NO" id="uvw-4a-BcF">
-                                                                <rect key="frame" x="148" y="52.333333333333371" width="60" height="60"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="60" id="Ngc-i0-EkU"/>
-                                                                    <constraint firstAttribute="height" constant="60" id="WdH-gh-b5j"/>
-                                                                </constraints>
-                                                            </imageView>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7RK-J9-T2b">
-                                                                <rect key="frame" x="214" y="70.333333333333371" width="30" height="24.333333333333329"/>
-                                                                <color key="tintColor" red="0.25490197539999998" green="0.34117650989999998" blue="0.61960786580000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="30" id="2Hr-FI-YgS"/>
-                                                                    <constraint firstAttribute="height" constant="30" id="YJh-mC-Ypt"/>
-                                                                </constraints>
-                                                            </imageView>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interrogante" translatesAutoresizingMaskIntoConstraints="NO" id="B5h-Mg-HP9">
-                                                                <rect key="frame" x="250" y="52.333333333333371" width="60" height="60"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="60" id="VI7-Xr-vsX"/>
-                                                                    <constraint firstAttribute="height" constant="60" id="Z4q-ab-Ond"/>
-                                                                </constraints>
-                                                            </imageView>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kme-VT-Fs8">
-                                                                <rect key="frame" x="316" y="70.333333333333371" width="30" height="24.333333333333329"/>
-                                                                <color key="tintColor" red="0.25490197539999998" green="0.34117650989999998" blue="0.61960786580000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="30" id="9oL-dw-lRv"/>
-                                                                    <constraint firstAttribute="height" constant="30" id="qwq-dW-bLa"/>
-                                                                </constraints>
-                                                            </imageView>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interrogante" translatesAutoresizingMaskIntoConstraints="NO" id="qxS-UR-gFw">
-                                                                <rect key="frame" x="352" y="52.333333333333371" width="60" height="60"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="60" id="BDP-eJ-PGE"/>
-                                                                    <constraint firstAttribute="width" constant="60" id="OAK-Jz-JsF"/>
-                                                                </constraints>
-                                                            </imageView>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPi-54-qp5">
-                                                        <rect key="frame" x="0.0" y="412" width="412" height="74"/>
-                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attack:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDF-vm-bQl">
+                                                <rect key="frame" x="0.0" y="0.0" width="64.666666666666671" height="28.333333333333332"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Defense:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="get-g1-Qaf">
+                                                <rect key="frame" x="0.0" y="33.333333333333371" width="76.333333333333329" height="28.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZE-RI-dqu">
+                                                <rect key="frame" x="0.0" y="66.666666666666629" width="64" height="28.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="weight:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkd-3D-Oxa">
+                                                <rect key="frame" x="0.0" y="100" width="66" height="28.333333333333343"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="rrg-8e-Xl4" firstAttribute="top" secondItem="8U9-Hx-TVI" secondAttribute="top" constant="8" id="0RH-Zf-UOA"/>
-                                            <constraint firstItem="rrg-8e-Xl4" firstAttribute="leading" secondItem="8U9-Hx-TVI" secondAttribute="leading" constant="8" id="Dfi-sf-xHR"/>
-                                            <constraint firstAttribute="bottom" secondItem="rrg-8e-Xl4" secondAttribute="bottom" constant="24" id="EYu-64-kjN"/>
-                                            <constraint firstAttribute="trailing" secondItem="rrg-8e-Xl4" secondAttribute="trailing" constant="8" id="vnx-uJ-JmT"/>
-                                        </constraints>
-                                    </view>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="dhm-FK-gf4">
+                                        <rect key="frame" x="191.66666666666663" y="6.3333333333333144" width="188.33333333333337" height="122"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stats_2_height" translatesAutoresizingMaskIntoConstraints="NO" id="Gqy-Qg-I8n">
+                                                <rect key="frame" x="0.0" y="0.0" width="188.33333333333334" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="OUY-ye-tU1"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stats_4_defense" translatesAutoresizingMaskIntoConstraints="NO" id="RAb-0t-lSy">
+                                                <rect key="frame" x="0.0" y="34.000000000000057" width="188.33333333333334" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="bv8-4v-yLX"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stats_3_attack" translatesAutoresizingMaskIntoConstraints="NO" id="a9k-en-RG3">
+                                                <rect key="frame" x="0.0" y="68.000000000000057" width="188.33333333333334" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="HLh-eO-TyH"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stats_1_weight" translatesAutoresizingMaskIntoConstraints="NO" id="Dyf-tQ-MDm">
+                                                <rect key="frame" x="0.0" y="102.00000000000006" width="188.33333333333334" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="qA1-FK-MlE"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4FS-Eg-LXN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="4FS-Eg-LXN" firstAttribute="trailing" secondItem="4ZZ-hg-JU5" secondAttribute="trailing" constant="24" id="1Up-wk-r8e"/>
+                            <constraint firstItem="8U9-Hx-TVI" firstAttribute="trailing" secondItem="4FS-Eg-LXN" secondAttribute="trailing" id="8Tc-By-QIJ"/>
+                            <constraint firstAttribute="bottom" secondItem="8U9-Hx-TVI" secondAttribute="bottom" id="AV8-0S-WKA"/>
                             <constraint firstItem="t9i-RE-XPI" firstAttribute="leading" secondItem="4FS-Eg-LXN" secondAttribute="leading" constant="8" id="B9U-lN-lDk"/>
-                            <constraint firstItem="4FS-Eg-LXN" firstAttribute="trailing" secondItem="FSZ-hY-Gmo" secondAttribute="trailing" id="BQw-gz-oln"/>
-                            <constraint firstAttribute="bottom" secondItem="FSZ-hY-Gmo" secondAttribute="bottom" id="DKz-Z5-cXR"/>
-                            <constraint firstItem="FSZ-hY-Gmo" firstAttribute="top" secondItem="t9i-RE-XPI" secondAttribute="bottom" constant="16" id="qSF-XY-bhB"/>
+                            <constraint firstItem="1F1-Uu-eIF" firstAttribute="top" secondItem="t9i-RE-XPI" secondAttribute="bottom" constant="10" id="Gss-9c-FXf"/>
+                            <constraint firstItem="cyt-Rg-Qtg" firstAttribute="top" secondItem="iPi-54-qp5" secondAttribute="bottom" constant="24" id="LFg-e2-ew4"/>
+                            <constraint firstItem="1F1-Uu-eIF" firstAttribute="centerX" secondItem="38W-d8-EQj" secondAttribute="centerX" id="N9F-ke-lHw"/>
+                            <constraint firstItem="cyt-Rg-Qtg" firstAttribute="leading" secondItem="4FS-Eg-LXN" secondAttribute="leading" constant="24" id="QLl-tp-gdO"/>
+                            <constraint firstItem="4ZZ-hg-JU5" firstAttribute="leading" secondItem="4FS-Eg-LXN" secondAttribute="leading" constant="24" id="S1n-VK-YHg"/>
+                            <constraint firstItem="4ZZ-hg-JU5" firstAttribute="top" secondItem="1F1-Uu-eIF" secondAttribute="bottom" constant="24" id="bfP-s4-gWS"/>
+                            <constraint firstItem="iPi-54-qp5" firstAttribute="leading" secondItem="4FS-Eg-LXN" secondAttribute="leading" constant="24" id="d72-yp-AIY"/>
+                            <constraint firstItem="4FS-Eg-LXN" firstAttribute="trailing" secondItem="cyt-Rg-Qtg" secondAttribute="trailing" constant="24" id="fYw-5q-aHe"/>
+                            <constraint firstItem="4FS-Eg-LXN" firstAttribute="trailing" secondItem="iPi-54-qp5" secondAttribute="trailing" constant="24" id="fqN-EI-CI6"/>
+                            <constraint firstItem="8U9-Hx-TVI" firstAttribute="leading" secondItem="4FS-Eg-LXN" secondAttribute="leading" id="pLr-kY-rDH"/>
                             <constraint firstItem="4FS-Eg-LXN" firstAttribute="trailing" secondItem="t9i-RE-XPI" secondAttribute="trailing" constant="8" id="s5x-OG-8QI"/>
+                            <constraint firstItem="iPi-54-qp5" firstAttribute="top" secondItem="4ZZ-hg-JU5" secondAttribute="bottom" constant="20" id="uux-1p-kKS"/>
                             <constraint firstItem="t9i-RE-XPI" firstAttribute="top" secondItem="4FS-Eg-LXN" secondAttribute="top" constant="8" id="vD9-2W-XpM"/>
-                            <constraint firstItem="FSZ-hY-Gmo" firstAttribute="leading" secondItem="4FS-Eg-LXN" secondAttribute="leading" id="wno-Ir-U0F"/>
+                            <constraint firstItem="8U9-Hx-TVI" firstAttribute="top" secondItem="4FS-Eg-LXN" secondAttribute="top" constant="270" id="xQ4-IB-aji"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MYY-Zr-u2e"/>
@@ -399,9 +410,12 @@
                         <outlet property="imageFirstEvolution" destination="uvw-4a-BcF" id="w8G-nZ-bi7"/>
                         <outlet property="imagePokemon" destination="t9i-RE-XPI" id="XKY-Qx-b4P"/>
                         <outlet property="imageSecondEvolution" destination="B5h-Mg-HP9" id="Jku-ke-I6x"/>
+                        <outlet property="imageStatsAttack" destination="Gqy-Qg-I8n" id="DgM-uy-wMO"/>
+                        <outlet property="imageStatsDefense" destination="RAb-0t-lSy" id="gLv-Jz-Hdq"/>
+                        <outlet property="imageStatsHeight" destination="a9k-en-RG3" id="oUa-fA-IKP"/>
+                        <outlet property="imageStatsWeight" destination="Dyf-tQ-MDm" id="Vk8-V7-Ixp"/>
                         <outlet property="imageThirdvolution" destination="qxS-UR-gFw" id="aLv-r8-jM1"/>
                         <outlet property="namePokemon" destination="1F1-Uu-eIF" id="rOt-3l-evg"/>
-                        <outlet property="typePokemon" destination="NgK-tS-fGg" id="JBm-cA-AMF"/>
                         <outlet property="weightPokemon" destination="dkd-3D-Oxa" id="vdN-BU-PKe"/>
                     </connections>
                 </viewController>
@@ -814,28 +828,28 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="S8r-am-SmR">
-                                <rect key="frame" x="182" y="392.66666666666669" width="64" height="141.00000000000006"/>
+                                <rect key="frame" x="180.33333333333334" y="392.66666666666669" width="67.333333333333343" height="141.00000000000006"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stats_1_attack" translatesAutoresizingMaskIntoConstraints="NO" id="8Vb-wv-8kk">
-                                        <rect key="frame" x="0.0" y="0.0" width="12" height="15"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="67.333333333333329" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="gmh-H4-gF2"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stats_2_attack" translatesAutoresizingMaskIntoConstraints="NO" id="3SK-xJ-AAZ">
-                                        <rect key="frame" x="0.0" y="42" width="21.333333333333332" height="15"/>
+                                        <rect key="frame" x="0.0" y="42" width="67.333333333333329" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="nJK-Ci-kiU"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stats_4_attack" translatesAutoresizingMaskIntoConstraints="NO" id="cIy-3a-JxO">
-                                        <rect key="frame" x="0.0" y="84" width="48.333333333333336" height="15"/>
+                                        <rect key="frame" x="0.0" y="84" width="67.333333333333329" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="068-AJ-Ltx"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stats_5_attack" translatesAutoresizingMaskIntoConstraints="NO" id="gGy-vx-EIj">
-                                        <rect key="frame" x="0.0" y="125.99999999999994" width="64" height="15"/>
+                                        <rect key="frame" x="0.0" y="125.99999999999994" width="67.333333333333329" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="F5i-8P-nTM"/>
                                         </constraints>
@@ -34228,10 +34242,14 @@ AAAAD0GWA
         <image name="pokedex_logo" width="147" height="38"/>
         <image name="pokemon-logo-png-1428" width="463.33334350585938" height="167"/>
         <image name="pokemon_logo_blanco" width="533.33331298828125" height="400"/>
-        <image name="stats_1_attack" width="12" height="5"/>
-        <image name="stats_2_attack" width="21.333333969116211" height="5"/>
-        <image name="stats_4_attack" width="48.333332061767578" height="5"/>
-        <image name="stats_5_attack" width="64" height="5"/>
+        <image name="stats_1_attack" width="67.333335876464844" height="7.6666665077209473"/>
+        <image name="stats_1_weight" width="67.333335876464844" height="7.6666665077209473"/>
+        <image name="stats_2_attack" width="67.333335876464844" height="7.6666665077209473"/>
+        <image name="stats_2_height" width="67.333335876464844" height="7.6666665077209473"/>
+        <image name="stats_3_attack" width="67.333335876464844" height="7.6666665077209473"/>
+        <image name="stats_4_attack" width="67.333335876464844" height="7.6666665077209473"/>
+        <image name="stats_4_defense" width="67.333335876464844" height="7.6666665077209473"/>
+        <image name="stats_5_attack" width="67.333335876464844" height="7.6666665077209473"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

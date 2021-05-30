@@ -18,13 +18,16 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var weightPokemon: UILabel!
     @IBOutlet weak var heightPokemon: UILabel!
     @IBOutlet weak var attackPokemon: UILabel!
-    @IBOutlet weak var typePokemon: UILabel!
     @IBOutlet weak var defensePokemon: UILabel!
     
     @IBOutlet weak var imagePokemon: UIImageView!
     @IBOutlet weak var imageFirstEvolution: UIImageView!
     @IBOutlet weak var imageSecondEvolution: UIImageView!
     @IBOutlet weak var imageThirdvolution: UIImageView!
+    @IBOutlet weak var imageStatsAttack: UIImageView!
+    @IBOutlet weak var imageStatsDefense: UIImageView!
+    @IBOutlet weak var imageStatsHeight: UIImageView!
+    @IBOutlet weak var imageStatsWeight: UIImageView!
     
     var pokemon: Pokemon?
     
@@ -71,11 +74,14 @@ class DetailViewController: UIViewController {
         imagePokemon.kf.setImage(with: URL(string: pokemon?.imageURL ?? ""))
         
         descriptionLabel.text = pokemon?.pokemonDescription
-        namePokemon.text = "Name: \(String(describing: pokemon?.name ?? ""))"
-        typePokemon.text = "Type: \(String(describing: pokemon?.type ?? ""))"
+        namePokemon.text = "\(String(describing: pokemon?.name ?? ""))"
         weightPokemon.text = "Weight: \(pokemon?.weight ?? 0) Kg"
         heightPokemon.text = "Height: \(pokemon?.height ?? 0)0 cm"
         attackPokemon.text = "Attack: \(pokemon?.attack ?? 0)"
         defensePokemon.text = "Defense: \(pokemon?.defense ?? 0)"
+        imageStatsAttack.image = UIImage(named: pokemon?.iconAttack ?? "")
+        imageStatsDefense.image = UIImage(named: pokemon?.iconDefense ?? "")
+        imageStatsHeight.image = UIImage(named: pokemon?.iconHeight ?? "")
+        imageStatsWeight.image = UIImage(named: pokemon?.iconWeight ?? "")
     }
 }
