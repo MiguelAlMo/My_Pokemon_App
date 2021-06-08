@@ -16,11 +16,15 @@ class BattleChangePokemonViewCell: UICollectionViewCell {
         viewCell.roundedView(value: 10)
         viewCell.borderColorBlack(value: 1)
     }
+    
+    // MARK: - Limpiar celdas
     override func prepareForReuse() {
         super.prepareForReuse()
         imageCell.image = nil
         
     }
+    
+    // MARK: - Configurar celdas
     func configure(image: String?, viewColor: UIColor) {
         viewCell.backgroundColor = viewColor
         imageCell.kf.setImage(with: URL(string: image ?? ""))

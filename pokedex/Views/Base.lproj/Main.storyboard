@@ -850,60 +850,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokeballfondo" translatesAutoresizingMaskIntoConstraints="NO" id="bbZ-yq-gkN">
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cualpokemones-1" translatesAutoresizingMaskIntoConstraints="NO" id="jgb-S2-hXw">
                                 <rect key="frame" x="0.0" y="44" width="428" height="882"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cualPokemonEs" translatesAutoresizingMaskIntoConstraints="NO" id="jgb-S2-hXw">
-                                <rect key="frame" x="0.0" y="44" width="428" height="566"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokemon_logo_blanco" translatesAutoresizingMaskIntoConstraints="NO" id="bbZ-yq-gkN">
+                                <rect key="frame" x="24" y="294" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="280" id="UV2-yP-s6L"/>
+                                    <constraint firstAttribute="width" constant="200" id="5ED-vm-bUA"/>
+                                    <constraint firstAttribute="height" constant="200" id="bZw-eS-Zxf"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="S8r-am-SmR">
-                                <rect key="frame" x="180.33333333333334" y="392.66666666666669" width="67.333333333333343" height="141.00000000000006"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stats_1_attack" translatesAutoresizingMaskIntoConstraints="NO" id="8Vb-wv-8kk">
-                                        <rect key="frame" x="0.0" y="0.0" width="67.333333333333329" height="15"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="15" id="gmh-H4-gF2"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stats_2_attack" translatesAutoresizingMaskIntoConstraints="NO" id="3SK-xJ-AAZ">
-                                        <rect key="frame" x="0.0" y="42" width="67.333333333333329" height="15"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="15" id="nJK-Ci-kiU"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stats_4_attack" translatesAutoresizingMaskIntoConstraints="NO" id="cIy-3a-JxO">
-                                        <rect key="frame" x="0.0" y="84" width="67.333333333333329" height="15"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="15" id="068-AJ-Ltx"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stats_5_attack" translatesAutoresizingMaskIntoConstraints="NO" id="gGy-vx-EIj">
-                                        <rect key="frame" x="0.0" y="125.99999999999994" width="67.333333333333329" height="15"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="15" id="F5i-8P-nTM"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is this pokemon?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKd-uS-0iO">
+                                <rect key="frame" x="36.666666666666657" y="84" width="355" height="47"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ce6-UE-pb4">
+                                <rect key="frame" x="50.666666666666657" y="494" width="147" height="46"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="24"/>
+                                <state key="normal" title="Write answer">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="writeAnswerAction:" destination="tqS-px-DoV" eventType="touchUpInside" id="e8B-bk-cZd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YxU-ig-qAR"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="bbZ-yq-gkN" secondAttribute="bottom" id="3KN-0s-OeT"/>
-                            <constraint firstItem="S8r-am-SmR" firstAttribute="centerX" secondItem="E0f-qX-WjD" secondAttribute="centerX" id="4Rs-83-CCA"/>
-                            <constraint firstItem="bbZ-yq-gkN" firstAttribute="leading" secondItem="YxU-ig-qAR" secondAttribute="leading" id="4oR-lj-h82"/>
-                            <constraint firstItem="S8r-am-SmR" firstAttribute="centerY" secondItem="E0f-qX-WjD" secondAttribute="centerY" id="P2F-qx-O2t"/>
+                            <constraint firstItem="bbZ-yq-gkN" firstAttribute="leading" secondItem="YxU-ig-qAR" secondAttribute="leading" constant="24" id="5kZ-NP-1zr"/>
+                            <constraint firstItem="xKd-uS-0iO" firstAttribute="centerX" secondItem="E0f-qX-WjD" secondAttribute="centerX" id="9Oy-Ep-g63"/>
+                            <constraint firstAttribute="bottom" secondItem="jgb-S2-hXw" secondAttribute="bottom" id="BS1-ue-FO0"/>
+                            <constraint firstItem="Ce6-UE-pb4" firstAttribute="centerX" secondItem="bbZ-yq-gkN" secondAttribute="centerX" id="DGT-dS-3Hc"/>
+                            <constraint firstItem="Ce6-UE-pb4" firstAttribute="top" secondItem="bbZ-yq-gkN" secondAttribute="bottom" id="Di3-0w-tP9"/>
                             <constraint firstItem="jgb-S2-hXw" firstAttribute="leading" secondItem="YxU-ig-qAR" secondAttribute="leading" id="PL9-SM-2y1"/>
+                            <constraint firstItem="bbZ-yq-gkN" firstAttribute="top" secondItem="YxU-ig-qAR" secondAttribute="top" constant="250" id="R3g-zV-K2o"/>
                             <constraint firstItem="YxU-ig-qAR" firstAttribute="trailing" secondItem="jgb-S2-hXw" secondAttribute="trailing" id="lT3-Wl-q1B"/>
-                            <constraint firstItem="bbZ-yq-gkN" firstAttribute="top" secondItem="YxU-ig-qAR" secondAttribute="top" id="m8L-lx-MbC"/>
                             <constraint firstItem="jgb-S2-hXw" firstAttribute="top" secondItem="YxU-ig-qAR" secondAttribute="top" id="oLu-ka-mlF"/>
-                            <constraint firstItem="bbZ-yq-gkN" firstAttribute="trailing" secondItem="YxU-ig-qAR" secondAttribute="trailing" id="xt1-rG-JzL"/>
+                            <constraint firstItem="xKd-uS-0iO" firstAttribute="top" secondItem="YxU-ig-qAR" secondAttribute="top" constant="40" id="t0U-D4-yKf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9zv-wx-db7"/>
+                    <connections>
+                        <outlet property="imagepoke" destination="bbZ-yq-gkN" id="y0V-Bw-X55"/>
+                        <outlet property="writeAnswer" destination="Ce6-UE-pb4" id="koZ-lr-KGd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1tw-ox-Ior" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -916,7 +909,7 @@
     <resources>
         <image name="arrow.right" catalog="system" width="128" height="98"/>
         <image name="arrowshape.turn.up.backward.fill" catalog="system" width="128" height="106"/>
-        <image name="cualPokemonEs" width="283.33334350585938" height="170"/>
+        <image name="cualpokemones-1" width="133.66667175292969" height="113"/>
         <image name="gravel1" width="166.66667175292969" height="111.33333587646484"/>
         <image name="imageView:Jex-IA-wIb:image" width="128" height="121">
             <mutableData key="keyedArchiveRepresentation">
@@ -34274,16 +34267,16 @@ AAAAD0GWA
         <image name="pokedex_logo" width="147" height="38"/>
         <image name="pokemon-logo-png-1428" width="463.33334350585938" height="167"/>
         <image name="pokemon_logo_blanco" width="533.33331298828125" height="400"/>
-        <image name="stats_1_attack" width="67.333335876464844" height="7.6666665077209473"/>
         <image name="stats_1_weight" width="67.333335876464844" height="7.6666665077209473"/>
-        <image name="stats_2_attack" width="67.333335876464844" height="7.6666665077209473"/>
         <image name="stats_2_height" width="67.333335876464844" height="7.6666665077209473"/>
         <image name="stats_3_attack" width="67.333335876464844" height="7.6666665077209473"/>
         <image name="stats_4_attack" width="67.333335876464844" height="7.6666665077209473"/>
         <image name="stats_4_defense" width="67.333335876464844" height="7.6666665077209473"/>
-        <image name="stats_5_attack" width="67.333335876464844" height="7.6666665077209473"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

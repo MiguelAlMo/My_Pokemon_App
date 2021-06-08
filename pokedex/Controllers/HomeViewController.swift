@@ -43,6 +43,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return cell ?? UITableViewCell()
     }
     
+    // MARK: - Navegación al ViewController correspondiente en función de la celda elegida
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
             case 0: performSegue(withIdentifier: "POKEDEX_SEGUE", sender: self)

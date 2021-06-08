@@ -7,6 +7,8 @@
 
 import UIKit
 
+// MARK: - Redondear imagen
+
 extension UIImageView {
     func roundedImage(value: Int) {
         layer.cornerRadius = CGFloat(value)

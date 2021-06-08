@@ -10,17 +10,21 @@ class PokemonViewCell: UICollectionViewCell {
     @IBOutlet weak var labelCell: UILabel!
     @IBOutlet weak var imageCell: UIImageView!
     @IBOutlet weak var viewCell: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         viewCell.roundedView(value: 10)
         viewCell.borderColorBlack(value: 1)
     }
+    
+    // MARK: - Limpiar celdas
     override func prepareForReuse() {
         super.prepareForReuse()
         labelCell.text = nil
         imageCell.image = nil
         
     }
+    // MARK: - configurar celdas
     func configure(name: String?, image: String?, viewColor: UIColor) {
         labelCell.text = name
         viewCell.backgroundColor = viewColor

@@ -34,6 +34,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // MARK: - Mostrar primera evolución pokemon
         defaultPokemons.forEach { poke in
             if pokemon?.evolutionChain?.count ?? 0 == 1 {
                 if pokemon?.evolutionChain?[0].name == poke.name {
@@ -42,6 +43,8 @@ class DetailViewController: UIViewController {
                 }
             }
         }
+        
+        // MARK: - Mostrar primera y segunda evolución pokemon
         defaultPokemons.forEach { poke in
             if pokemon?.evolutionChain?.count ?? 0 == 2 {
                 if pokemon?.evolutionChain?[0].name == poke.name {
@@ -53,6 +56,8 @@ class DetailViewController: UIViewController {
                 }
             }
         }
+        
+        // MARK: - Mostrar primera, segunda y tercera evolución pokemon
         defaultPokemons.forEach { poke in
             if pokemon?.evolutionChain?.count ?? 0 == 3{
                 if pokemon?.evolutionChain?[0].name == poke.name {
@@ -68,11 +73,6 @@ class DetailViewController: UIViewController {
             }
         }
         
-        descriptionView.borderColorBlack(value: 1)
-        descriptionView.roundedView(value: 20)
-        backgroundView.backgroundColor = backgroundColor(forType: pokemon?.type ?? "")
-        imagePokemon.kf.setImage(with: URL(string: pokemon?.imageURL ?? ""))
-        
         descriptionLabel.text = pokemon?.pokemonDescription
         namePokemon.text = "\(String(describing: pokemon?.name ?? ""))"
         weightPokemon.text = "\(pokemon?.weight ?? 0)"
@@ -83,5 +83,10 @@ class DetailViewController: UIViewController {
         imageStatsDefense.image = UIImage(named: pokemon?.iconDefense ?? "")
         imageStatsHeight.image = UIImage(named: pokemon?.iconHeight ?? "")
         imageStatsWeight.image = UIImage(named: pokemon?.iconWeight ?? "")
+        
+        descriptionView.borderColorBlack(value: 1)
+        descriptionView.roundedView(value: 20)
+        backgroundView.backgroundColor = backgroundColorAlpha(forType: pokemon?.type ?? "", alpha: 0.9)
+        imagePokemon.kf.setImage(with: URL(string: pokemon?.imageURL ?? ""))
     }
 }

@@ -7,15 +7,21 @@
 import UIKit
 import Kingfisher
 
+// MARK: - Pruebas en ViewController a parte
+
 class PruebasViewController: UIViewController {
+    
     @IBOutlet weak var imagepoke: UIImageView!
-    @IBOutlet weak var viewPoke: UIView!
+    @IBOutlet weak var writeAnswer: UIButton!
+    
+    @IBAction func writeAnswerAction(_ sender: Any) {
+        
+    }
+    
+    private var pokemon = defaultPokemons.randomElement()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imagepoke.kf.setImage(with: URL(string: defaultPokemons.first?.imageURL ?? ""))
-        viewPoke.layer.borderWidth = 1
-        viewPoke.layer.borderColor = UIColor.gray.cgColor
-        viewPoke.roundedView(value: 20)
+        imagepoke.kf.setImage(with: URL(string: pokemon?.imageURL ?? ""))
     }
 }

@@ -120,6 +120,7 @@ class BattleViewController: UIViewController {
         powerRivalPokemon.text = "Pw:\(rivalPokemon?.attack ?? 0)"
     }
     
+    // MARK: - Alert resultado de la batalla
     func showAlert(message: String) {
         let alert = UIAlertController(title: "Battle results", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -130,28 +131,32 @@ class BattleViewController: UIViewController {
 
 extension BattleViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
+    // MARK: - Numero de items a mostrar
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
         defaultPokemons.count
     }
     
+    // MARK: - Márgenes del collectionView
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
     }
     
+    // MARK: - Items a mostrar por fila - margen entre los items de cada celda
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width / 6 - 2,
                       height: collectionView.frame.width / 6 - 2 )
     }
     
+    // MARK: - Configurar celdas con los datos de cada pokémon
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BattleChangePokemonViewCell", for: indexPath) as? BattleChangePokemonViewCell
             if(indexPath.row < defaultPokemons.count){
                 let data = defaultPokemons[indexPath.row]
-                cell?.configure(image: data.imageURL, viewColor: backgroundColorAlpha(forType: data.type ?? ""))
+                cell?.configure(image: data.imageURL, viewColor: backgroundColorAlpha(forType: data.type ?? "",alpha: 0.6))
             }
             return cell ?? UICollectionViewCell()
     }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if(indexPath.row < defaultPokemons.count) {
             

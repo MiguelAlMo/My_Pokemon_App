@@ -15,7 +15,6 @@ func loadDefaultData() {
     loadPokemons()
 }
 
-
 // ******* LOAD JSON DATA *******
 private func loadPokemons() {
     guard let pathURL = Bundle.main.url(forResource: "pokemon_data", withExtension: "json") else {
